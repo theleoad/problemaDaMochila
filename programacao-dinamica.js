@@ -102,6 +102,23 @@ iniciarTabelasEValores();
 calcularTabelas();
 agruparItensSelecionados();
 
-tabela;
-tabela[items.length - 1][capacidade];
-itemsSelecionados;
+//Gerando visualização no arquivo HTML
+
+var rows = itemsSelecionados;
+var html = "<table border='1|1'>";
+html +=
+  '<tr><th colspan="4">Escolhidos</th></tr><tr><td>id:</td><td>nome:</td><td>peso:</td><td>valor:</td></tr>';
+for (var i = 0; i < rows.length; i++) {
+  html += "<tr>";
+  html += "<td>" + rows[i].id + "</td>";
+  html += "<td>" + rows[i].nome + "</td>";
+  html += "<td>" + rows[i].peso + "</td>";
+  html += "<td>" + rows[i].valor + "</td>";
+
+  html += "</tr>";
+}
+html += "</table>";
+document.getElementById("itens").innerHTML = html;
+
+document.getElementById("valor").innerHTML =
+  tabela[items.length - 1][capacidade];
