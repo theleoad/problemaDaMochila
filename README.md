@@ -8,7 +8,7 @@
 
 ## Algoritmo Guloso
 
-Nessa resolução o algoritmo escolhe o item com maior valor e colca na mochila. Em seguida ele escolhe o segundo item de maior valor e testa se "cabe" na mochila, inclui se couber. Segue fazendo isso até que a mochila fique cheia ou não caiba mais nenhum item entre os disponíveis.
+Nessa resolução o algoritmo escolhe o item com maior valor e coloca na mochila. Em seguida ele escolhe o segundo item de maior valor e testa se "cabe" na mochila, inclui se couber. Segue fazendo isso até que a mochila fique cheia ou não caiba mais nenhum item entre os disponíveis.
 
 ## Programação Dinâmica
 
